@@ -15,8 +15,8 @@ RUN for i in `find * -maxdepth 0 -type d -perm 2777`; do mv $i .orig/data/; ln -
 
 
 FROM alpine:latest
-LABEL org.opencontainers.image.authors="Abe Masahiro <pen@thcomp.org>" \
-    org.opencontainers.image.source="https://github.com/pen/docker-pukiwiki"
+LABEL org.opencontainers.image.authors="arqtan <arq@asaasa.tk>" \
+    org.opencontainers.image.source="https://github.com/arqtan/docker-pukiwiki"
 
 RUN apk add --no-cache \
             h2o \
