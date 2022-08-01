@@ -2,7 +2,7 @@
 
 ## Description
 
-[PukiWiki Unicode版](https://pukiwiki.osdn.jp/)をalpineとh2oで構成したもの。
+penさんの [PukiWiki Unicode版](https://pukiwiki.osdn.jp/)をalpineとh2oで構成したものをv1.5.4 対応させただけ。
 
 ## インストール
 
