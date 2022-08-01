@@ -1,7 +1,7 @@
 FROM busybox AS builder
 
-ARG dir="72656"
-ARG name="pukiwiki-1.5.3_utf8"
+ARG dir="77082"
+ARG name="pukiwiki-1.5.4_utf8"
 
 RUN wget "http://iij.dl.osdn.jp/pukiwiki/$dir/$name.zip"
 RUN unzip "$name.zip"
@@ -21,7 +21,7 @@ LABEL org.opencontainers.image.authors="Abe Masahiro <pen@thcomp.org>" \
 RUN apk add --no-cache \
             h2o \
             perl \
-            php7-cgi
+            php8-cgi
 
 COPY --from=builder /pukiwiki /var/www
 COPY rootfs /
