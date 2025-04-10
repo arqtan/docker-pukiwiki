@@ -10,7 +10,7 @@ penさんの「 [PukiWiki Unicode版](https://pukiwiki.sourceforge.io/)をalpine
 
 ```shell
 mkdir $HOME/pukiwiki
-docker run -p 8080:80 -v $HOME/pukiwiki:/ext -d arqtanjp/pukiwiki
+docker run -p 8080:80 -v $HOME/pukiwiki:/ext -d arqtanjp/pukiwiki:1.5.4-git
 open http://localhost:8080
 ```
 
