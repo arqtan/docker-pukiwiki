@@ -11,7 +11,7 @@ WORKDIR /pukiwiki
 RUN rm -f *.txt *.tar.gz
 RUN mkdir -p .orig/conf .orig/data
 RUN for i in `find * -maxdepth 0 -name '*.ini.php'`; do mv $i .orig/conf/; ln -s /ext/conf/$i; done
-RUN for i in `find * -maxdepth 0 -type d -perm 2777`; do mv $i .orig/data/; ln -s /ext/data/$i; done
+RUN for i in `find * -maxdepth 0 -type d -perm -ug+rwx`; do mv $i .orig/data/; ln -s /ext/data/$i; done
 
 
 FROM alpine:3.19
