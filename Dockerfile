@@ -21,7 +21,7 @@ LABEL org.opencontainers.image.authors="arqtan <arq@asaasa.tk>" \
 RUN apk add --no-cache \
             h2o \
             perl \
-            php83-cgi
+            php82-cgi
 
 COPY --from=builder /pukiwiki /var/www
 COPY rootfs /
